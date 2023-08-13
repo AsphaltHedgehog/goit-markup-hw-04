@@ -210,6 +210,16 @@ body {
   background-color: #404bbf;
 }
 
+.section-title {
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 .section-principles {
   padding: 120px 0;
 }
@@ -282,13 +292,6 @@ body {
 }
 
 .section-our-team .section-title {
-  color: #2e2f42;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
   margin-bottom: 72px;
 }
 
@@ -298,7 +301,7 @@ body {
 }
 
 .flex-team {
-  flex-basis: calc((100%-72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-list {
@@ -334,6 +337,58 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 8px;
+}
+
+.section-our-team .flex-list {
+  display: inline-flex;
+  gap: 24px;
+}
+
+.section-our-team .flex-list .link {
+  height: 40px;
+  width: 40px;
+  padding: 12px 12px;
+  background-color: #404bbf;
+  border-radius: 50%;
+  fill: #f4f4fd;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.section-customers {
+  padding: 120px 0;
+}
+
+.section-customers .section-title {
+  padding-bottom: 72px;
+}
+
+.flex-customers {
+  display: inline-flex;
+  gap: 24px;
+}
+
+.flex-customers svg {
+  fill: #8e8f99;
+}
+
+.customers-link {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  box-sizing: border-box;
+  width: 168px;
+  height: 88px;
+  display: block;
+}
+
+.flex-customers svg:hover,
+.flex-customers svg:focus,
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  fill: #404bbf;
 }
 
 .filter-section {
@@ -419,6 +474,17 @@ img {
   max-width: 264px;
 }
 
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 120px;
+}
+
+.footer-flex {
+  max-width: 264px;
+}
+
 .footer-logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -441,7 +507,31 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+}
+
+.footer .paragraph:nth-child(1) {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.flex-links .link {
+  height: 40px;
+  width: 40px;
+  padding: 8px 8px;
+  background-color: #404bbf;
+  border-radius: 50%;
+  fill: #f4f4fd;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.flex-links .list {
+  display: inline-flex;
+  gap: 16px;
 }
 
 .hiden-title {
