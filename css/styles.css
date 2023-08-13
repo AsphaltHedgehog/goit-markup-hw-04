@@ -349,11 +349,16 @@ img {
   height: 40px;
   width: 40px;
   padding: 12px 12px;
-  background-color: #404bbf;
+  background-color: #4d5ae5;
   border-radius: 50%;
   fill: #f4f4fd;
   display: inline-block;
   box-sizing: border-box;
+}
+
+.section-our-team .flex-list .link:hover,
+.link:focus {
+  background-color: #404bbf;
 }
 
 .section-customers {
@@ -527,6 +532,11 @@ img {
   fill: #f4f4fd;
   display: inline-block;
   box-sizing: border-box;
+}
+
+.flex-links .link:hover,
+.link:focus {
+  background-color: #31d0aa;
 }
 
 .flex-links .list {
