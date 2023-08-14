@@ -7,7 +7,7 @@
   --filter-text-color: #4d5ae5;
   --hover-color: #404bbf;
   --transition-color-timing: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-backgroundcolor-timing: background-color 250ms
+  --transition-background-color-timing: background-color 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
   --cubic-anim: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -121,7 +121,6 @@ body {
   display: inline-block;
 
   transition: var(--transition-color-timing);
-  transition-property: transition;
 }
 
 .header-nav-list .nav-links-items:hover,
@@ -153,8 +152,7 @@ body {
 }
 
 .header-address-list .link {
-  transition: var(--transition-color-timing)
-  transition-property: transition;
+  transition: var(--transition-color-timing);
 }
 
 .header .address {
@@ -246,8 +244,7 @@ body {
   border: none;
   box-shadow: 8px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-  transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transition;
+  transition: var(--transition-background-color-timing);
 }
 
 .section-hero .button-order:hover,
