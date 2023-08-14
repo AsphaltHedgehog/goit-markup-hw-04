@@ -83,15 +83,6 @@ body {
   align-items: center;
 }
 
-.header-nav-list:first-child {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transition;
-}
-
-.header-nav-list:first-child:hover {
-  transition: color;
-}
-
 .header-nav-list {
   display: flex;
   gap: 40px;
@@ -105,10 +96,13 @@ body {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: inline-block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transition;
 }
 
-.header-nav-list .link:hover,
-.link:focus {
+.header-nav-list .nav-links-items:hover,
+.nav-links-items:focus {
   color: #404bbf;
 }
 
@@ -121,31 +115,25 @@ body {
   content: '';
   background-color: #404bbf;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
   border-radius: 2px;
 }
 
-.header-address-list .link:hover {
-  color: #404bbf;
-}
+.header-address-list .link:hover,
 .header-address-list .link:focus {
   color: #404bbf;
 }
 
-.header .address {
-  font-style: normal;
-}
-
-.header-address-list:first-child {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.header-address-list .link {
+  transition: color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transition;
 }
 
-.header-address-list:first-child:hover {
-  transition: color;
+.header .address {
+  font-style: normal;
 }
 
 .header-address-list {
@@ -225,6 +213,9 @@ body {
   height: 56px;
   border: none;
   box-shadow: 8px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transition;
 }
 
 .section-hero .button-order:hover,
@@ -367,7 +358,7 @@ img {
   gap: 24px;
 }
 
-.section-our-team .flex-list .link {
+.section-our-team .flex-list .team-link-item {
   height: 40px;
   width: 40px;
   padding: 12px 12px;
@@ -378,8 +369,8 @@ img {
   box-sizing: border-box;
 }
 
-.section-our-team .flex-list .link:hover,
-.link:focus {
+.section-our-team .team-link-item:hover,
+.team-link-item:focus {
   background-color: #404bbf;
 }
 
@@ -589,7 +580,8 @@ img {
   box-sizing: border-box;
 }
 
-.flex-links .link:hover {
+.flex-links-item:hover,
+.flex-links-item:focus {
   background-color: #31d0aa;
 }
 
