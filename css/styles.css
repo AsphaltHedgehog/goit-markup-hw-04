@@ -254,12 +254,6 @@ body {
 
 /* second section */
 
-.section-principles .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .section-principles {
   padding: 120px 0;
 }
@@ -282,6 +276,10 @@ body {
   background-color: #f4f4fd;
   border-radius: 4px;
   padding: 24px 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .principle-list .title {
