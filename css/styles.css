@@ -556,10 +556,21 @@ img {
   transition: transform 250ms var(--cubic-anim);
 }
 
-.images-box:hover,
-.images-box:focus .paragraph {
+.portfolio-filter-link:hover .paragraph {
   transform: translateY(0%);
 }
+
+.portfolio-filter-link:focus .paragraph {
+  transform: translateY(0%);
+}
+
+/* .images-box:hover .paragraph {
+  transform: translateY(0%);
+}
+
+.images-box:focus .paragraph {
+  transform: translateY(0%);
+} */
 
 /* .overlay {
   position: absolute;
