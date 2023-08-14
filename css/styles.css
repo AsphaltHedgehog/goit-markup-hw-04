@@ -254,6 +254,12 @@ body {
 
 /* second section */
 
+.section-principles .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section-principles {
   padding: 120px 0;
 }
