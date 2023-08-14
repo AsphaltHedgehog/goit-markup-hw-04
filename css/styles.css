@@ -55,6 +55,10 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -349,10 +353,6 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-img {
-  display: block;
-}
-
 .worker-cards {
   padding: 32px 0;
 }
@@ -534,7 +534,33 @@ img {
   width: 360px;
 }
 
-.overlay {
+.portfolio-examples .images-box .paragraph {
+  color: #f4f4fd;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-filter-link .images-box .paragraph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  padding: 40px 32px;
+
+  transition-property: transform;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.images-box:hover .paragraph {
+  transform: translateY(0%);
+}
+
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -550,15 +576,7 @@ img {
 
 .images-box:hover .overlay {
   transform: translateY(0%);
-}
-
-.images-box .overlay .paragraph {
-  color: #f4f4fd;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
+} */
 
 .border-cards {
   border: 1px solid #e7e9fc;
