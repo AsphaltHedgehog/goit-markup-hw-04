@@ -553,10 +553,11 @@ img {
 
   transition-property: transform;
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms var(--cubic-anim);
 }
 
-.images-box:hover .paragraph {
+.images-box:hover,
+.images-box:focus .paragraph {
   transform: translateY(0%);
 }
 
