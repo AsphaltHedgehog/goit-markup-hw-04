@@ -265,7 +265,7 @@ body {
 }
 
 .flex-list {
-  flex-basis: calc((100%-3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .section-principles .list {
@@ -378,7 +378,8 @@ img {
 }
 
 .section-our-team .flex-list {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -389,12 +390,19 @@ img {
   background-color: #4d5ae5;
   border-radius: 50%;
   fill: #f4f4fd;
-  display: inline-block;
+  display: flex;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--transition-background-color-timing);
 }
 
-.section-our-team .team-link-item:hover,
-.team-link-item:focus {
+.section-our-team .team-link-item:hover {
+  background-color: #404bbf;
+}
+
+.section-our-team .team-link-item:focus {
   background-color: #404bbf;
 }
 
@@ -413,8 +421,14 @@ img {
   gap: 24px;
 }
 
-.flex-customers svg {
+.section-customers .flex-customers svg {
   fill: #8e8f99;
+}
+
+.flex-customers .svg {
+  fill: #8e8f99;
+  width: 16px;
+  height: 16px;
 }
 
 .customers-link {
